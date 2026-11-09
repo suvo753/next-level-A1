@@ -1,7 +1,7 @@
 
 
 
-const multiplyValue = (value: number , multiplier?: number)=> {
+const multiplyValue = (value: number , multiplier?: number) : number  => {
 
     if(multiplier === undefined){
 
@@ -44,7 +44,7 @@ const processInput =(value: string | number | boolean): string | number => {
 
 
 
-const formatCoordinate =( coordinate: readonly [number, number, string]) =>{
+const formatCoordinate =( coordinate: readonly [number, number, string]) : string =>{
     const [latitude, longitude, locationName] = coordinate ;  
     return `Location: ${locationName} (${latitude}, ${longitude})`;
 }
@@ -78,7 +78,7 @@ interface Course {
 
 
 
-const getPopularCourses =(courses: Course[], minStudents: number) => {
+const getPopularCourses =(courses: Course[], minStudents: number) :  Course[]  => {
 
     const result: Course[] = [];
 
@@ -111,7 +111,7 @@ const getPopularCourses =(courses: Course[], minStudents: number) => {
 
 
 
-const pluckValues = <T, K extends keyof T> (items: T[], key: K) => {
+const pluckValues = <T, K extends keyof T> (items: T[], key: K) : T[K][]  => {
 
     const result: T[K][] = [];
 
