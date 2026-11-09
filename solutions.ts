@@ -164,7 +164,7 @@ class Manager extends Employee {
 }
 
 
-const manager = new Manager("Alice", 50000, "Engineering");
+
 
 
 
