@@ -44,15 +44,25 @@ Here, AdminUser needs both name and role properties.
 We can use both together to create flexible types.
 
 typescript
+
+
 type Person = {
+
   name: string;
+
 };
 
 type Role = {
+
   role: "Admin" | "User";
+
+
 };
 
+
 type Account = Person & Role;
+
+
 
 
 Now, Account must have a name and a role that can be either Admin or User.
