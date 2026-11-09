@@ -78,7 +78,7 @@ interface Course {
 
 
 
-function getPopularCourses(courses: Course[], minStudents: number) {
+const getPopularCourses =(courses: Course[], minStudents: number) => {
 
     const result: Course[] = [];
 
@@ -170,3 +170,16 @@ const manager = new Manager("Alice", 50000, "Engineering");
 
 
 
+
+
+ const validateAgeAsync = async ( age: number): Promise<string> => {
+  return new Promise((resolve, reject) => {
+    if (age < 18) {
+      reject(new Error("Access Denied: Must be 18 or older"));
+    } else {
+      setTimeout(() => {
+        resolve("Access Granted");
+      }, 1000);
+    }
+  });
+}
