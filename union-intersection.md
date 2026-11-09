@@ -38,8 +38,8 @@ const admin: AdminUser = {
 
 
 Here, AdminUser needs both name and role properties.
-```
-## Combining Union and Intersection
+
+ Combining Union and Intersection
 
 We can use both together to create flexible types.
 
