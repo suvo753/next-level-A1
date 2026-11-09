@@ -10,14 +10,20 @@ An Interface is mainly used to define the structure of an object.
 
 typescript
 interface User {
+
   name: string;
+
   age: number;
+
+  
 }
 
 
 A Type Alias can define objects, strings, numbers, and other types.
 
 typescript
+
+
 type Status = "active" | "inactive";
 
 
